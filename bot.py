@@ -30,6 +30,17 @@ def send_help(message):
     bot.reply_to(message,
                  "Если возникли проблемы с ботом, пожалуйста, свяжитесь с админом @legsal_1:\n")
 
+
+# Команда /tutorial
+@bot.message_handler(commands=['tutorial'])
+def send_tutorial(message):
+    bot.reply_to(message,
+        "Как нужно заказывать фильмы и сериалы:\n"
+        "✅ Пример: Можно, пожалуйста, сериал Уэнздей (Wednesday) 2022 года (желательно указать страну).\n\n"
+        "Так писать нельзя:\n"
+        "❌ Скиньте сериал Во все тяжкие.")
+
+
 # Команда /support
 @bot.message_handler(commands=['support'])
 def send_support(message):
