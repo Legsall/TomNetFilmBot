@@ -30,6 +30,21 @@ def send_help(message):
     bot.reply_to(message,
                  "Если возникли проблемы с ботом, пожалуйста, свяжитесь с админом @legsal_1:\n")
 
+# Команда /support
+@bot.message_handler(commands=['support'])
+def send_support(message):
+    bot.reply_to(message,
+        "Привет, друзья! Если вам нравится мой контент и вы хотите поддержать мой труд,\n"
+        "буду рад любой помощи. Ваша поддержка помогает развивать канал и делать еще больше интересного контента!\n\n"
+        "Реквизиты:\n"
+        "Карта (Мир-ЮМани): 2204120119979512 (ЮMoney)\n"
+        "ЮMoney (ЮМани Кошелек): 4100118775949612"
+    )
+
+
+bot.reply_to(message, text)
+
+
 # Команда /privacy (политика конфиденциальности)
 @bot.message_handler(commands=['privacy'])
 def send_privacy(message):
